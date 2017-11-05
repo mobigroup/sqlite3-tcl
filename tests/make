@@ -1,0 +1,11 @@
+gcc -g -O2 -std=gnu99 -lsqlite3 -o select_c select.c
+gcc -g -O2 -std=gnu99 -lsqlite3 -o select_c_tcl tcl.c
+
+echo "select field by C application"
+time ./select_c
+echo "select list item from field by C application with TCL interp loaded into SQLite"
+time ./select_c_tcl
+echo "select list item from field by TCL application"
+time ./select.tcl
+
+rm select_c select_c_tcl

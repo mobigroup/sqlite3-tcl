@@ -1,0 +1,17 @@
+sqlite3-ext-tcl (2010.08.08) unstable; urgency=low
+
+  * Check Tcl function exists in TCLCMD
+
+ -- Alexey Pechnikov <pechnikov@mobigroup.ru>  Sun, 08 Aug 2010 14:30:33 +0400
+
+sqlite3-ext-tcl (2010.08.05.1) unstable; urgency=low
+
+  * Disable Tcl_Init for fast initialization
+
+ -- Alexey Pechnikov <pechnikov@mobigroup.ru>  Thu, 05 Aug 2010 21:20:28 +0400
+
+sqlite3-ext-tcl (2010.08.05) unstable; urgency=low
+
+  * Initial release.
+
+ -- Alexey Pechnikov <pechnikov@mobigroup.ru>  Thu, 05 Aug 2010 16:28:00 +0400

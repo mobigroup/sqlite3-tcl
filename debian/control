@@ -1,0 +1,19 @@
+Source: sqlite3-ext-tcl
+Section: devel
+Priority: optional
+Maintainer: Alexey Pechnikov (MBG) <pechnikov@mobigroup.ru>
+Build-Depends: cdbs (>= 0.4.15), debhelper (>= 4.1.16), libsqlite3-dev, tcl8.5-dev
+Standards-Version: 3.8.3
+
+Package: sqlite3-ext-tcl
+Section: misc
+Architecture: any
+Depends: ${shlibs:Depends}, libsqlite3-0, tcl8.5
+Suggests: sqlite3
+Description: Extension for TCL evaluation
+ The package provide extension for TCL evaluation by user-defined function inside RDBMS SQLite3.
+ .
+ Add line below into your ~/.sqliterc
+ .load /usr/lib/libsqlitetcl.so
+ .
+ See project home page at http://sqlite.mobigroup.ru/wiki?name=ext_tcl
